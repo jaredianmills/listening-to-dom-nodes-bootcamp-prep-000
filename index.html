@@ -39,3 +39,35 @@
     </div>
   </body>
 </html>
+
+<script>
+const main = document.getElementById('main');
+
+const input = document.querySelector('input');
+
+const divs = document.querySelectorAll('div');
+
+input.addEventListener('keydown', function(e) {
+  if (e.which === 70) {
+    e.preventDefault();
+    alert("Don't even try it, buddy!");
+  }
+});
+
+main.addEventListener('click', function(event) {
+  alert('This is what happens when you click me!')
+});
+
+function mouseOver() {
+  main.innerText = 'Your mouse is on top of me!'
+};
+
+function mouseOut() {
+  main.innerText = `My ID is "main"!`
+};
+
+main.addEventListener('mouseover', mouseOver());
+
+main.addEventListener('mouseout', mouseOut());
+
+</script>
