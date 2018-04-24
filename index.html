@@ -47,6 +47,8 @@ const input = document.querySelector('input');
 
 const divs = document.querySelectorAll('div');
 
+const div5 = divs[5]
+
 input.addEventListener('keydown', function(e) {
   if (e.which === 70) {
     e.preventDefault();
@@ -59,7 +61,7 @@ main.addEventListener('click', function(event) {
 });
 
 function mouseOver() {
-  main.innerText += 'Your mouse is on top of me!'
+  main.innerText = 'Your mouse is on top of me!'
 };
 
 function mouseOut() {
